@@ -1,10 +1,5 @@
-using TheShop.Discount.Context;
-using TheShop.Discount.Services;
-
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddSingleton<DiscountContext>();
-builder.Services.AddScoped<IDiscountCodeService, DiscountCodeService>();
 // Add services to the container.
 
 builder.Services.AddControllers();
